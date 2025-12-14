@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: dark; }
+
+body { @apply bg-night text-white antialiased; }
+
+/* Subtle geometric vibe (abstract) */
+.pattern {
+  background-image:
+    radial-gradient(transparent 0 60%, rgba(214,178,94,.06) 61% 62%, transparent 63% 100%),
+    radial-gradient(transparent 0 60%, rgba(214,178,94,.04) 61% 62%, transparent 63% 100%);
+  background-size: 120px 120px, 180px 180px;
+  background-position: 0 0, 40px 60px;
+}
